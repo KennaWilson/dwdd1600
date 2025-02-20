@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lured.css">
+    <title>Lured Outdoors</title>
+    <meta name="description" content="Get lost in the Outdoors">
+    <meta name="author" content="McKenna Wilson">
+</head>
+
+<body>
+    <!--This is the start of the header.-->
+    <header>
+        <h1><b>Lured Outdoors</b></h1>
+    </header>
+
+
+    <!--This is the start of the main section.-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="areamap.html">Area Map</a></li>
+            <li><a href="excursions.html">Excursions</a></li>
+            <li><a href="meetourguides.html">Meet Our Guides</a></li>
+        </ul>
+    </nav>
+
+        <nav>
+                <h1>Area Map</h1>
+                <p>Looking for your next adventure? Our website makes it easy to discover exciting excursions right in
+                    your area! Simply enter your location and the type of adventure you're craving—whether it’s a
+                    thrilling hike, a relaxing beach day, or a cultural experience—and we’ll generate a list of
+                    personalized options just for you. No more endless searching or uncertainty—let us do the work and
+                    help you find the perfect outing near you. Whether you’re exploring locally or seeking a hidden gem,
+                    your next adventure is just a few clicks away!
+                </p>
+
+                <h2>Select Your Area Below</h2>
+                <ol>
+                    <li> <a href="idaho.html">Idaho</a></li>
+                    <li> <a href="utah.html">Utah</a></li>
+                    <li> <a href="arizona.html">Arizona</a></li>
+                    <li> <a href="california.html">California</a></li>
+                    <li> <a href="montana.html">Montana</a></li>
+                    <li> <a href="wyoming.html">Wyoming</a></li>
+                </ol>
+
+                <h3>Interactive Map of the United States</h3>
+                <p>Find Where You Are On The Map</p>
+                <div id="map"></div>
+            
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                <script>
+                    // Create the map and set the view to the United States with an appropriate zoom level
+                    var map = L.map('map').setView([37.0902, -95.7129], 4); // Coordinates for the center of the United States
+            
+                    // Add OpenStreetMap tile layer to the map
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+            
+                    // Add a marker to a specific location in the United States (e.g., Washington, D.C.)
+                    var marker = L.marker([38.8954, -77.0365]).addTo(map);
+                    marker.bindPopup("<b>Washington, D.C.</b><br>Capital of the United States.").openPopup();
+                </script>
+        </nav>
+
+                 <!--This is the start of the footer.-->
+    <footer>
+        <p>&copy; McKenna Wilson &bull; 2025 </p>
+    </footer>
