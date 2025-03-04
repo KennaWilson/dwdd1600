@@ -40,6 +40,7 @@ h2 {
     color:darkcyan;
 }
 
+
 ol li {
     color:cadetblue;
     letter-spacing: .5px;
@@ -81,6 +82,11 @@ main h1 {
 }
 
 main h2 {
+    color:cadetblue;
+    margin-bottom: .2rem;
+}
+
+main h3 {
     color:cadetblue;
     margin-bottom: .2rem;
 }
@@ -154,11 +160,12 @@ div.gallery {
     flex-wrap: wrap;
 }
 div.gallery figure {
-margin: 0rem 0 0 0;
+    margin: .2rem 1rem 0 0;
 }
+
 div.gallery figcaption {
     font-size: .8rem;
-    color: #b64e11;
+    color: darkcyan;
     text-align: center;
 }
 
