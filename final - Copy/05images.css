@@ -1,0 +1,608 @@
+.oxygen-light {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oxygen-bold {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  body
+    .oxygen-regular {
+        font-family: "Inter", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+    body {
+        background-color: #c5eae6;
+    }
+
+/* Header section styling */
+header span {
+    margin: 0rem;
+    color: #A1E3D2;
+    letter-spacing: 0px;
+}
+
+
+header {
+    text-align: center;
+}
+
+header img {
+    margin-right: 20px; 
+    padding:0; 
+    spacing: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;   
+    top: .05px;  
+}
+
+h2 {
+    color:#ea915a;
+    font-family: 'Pacifico',cursive;
+    font-size: 2rem; 
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    color:#ea915a;
+    font-family: 'Pacifico',cursive;
+    font-size: 2rem; 
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #faefb0; 
+    padding: 1rem 3vw;
+    color: #ea915a;
+  }
+
+  h1 {
+    font-family: 'Pacifico',cursive;
+    font-size: 4rem; 
+    margin: 0;
+  }
+
+
+ol li {
+    color:cadetblue;
+    letter-spacing: .5px;
+    margin: 0.10rem;
+    padding:.5rem 1vw;
+}
+
+p {
+    color: cadetblue;
+    text-align: center;
+    max-width: 600px;  
+    margin: 0 auto;    
+    line-height: 1.5;
+}
+
+
+.testimonials {
+    column-count: 3; 
+    column-gap: 20px; 
+}
+
+.testimonials p {
+    font-style: italic; 
+    color: cadetblue;
+}
+
+/* Nav section styling */
+nav {
+    background-color: aliceblue;
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: lower-roman;
+    padding: 5px 2vw;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration:double;
+    color:darkcyan;
+    font-weight:700;
+    display:block;
+    padding: .45rem 2rem;
+    text-align: center;
+}
+nav .active a {
+    background-color: cadetblue;
+    color: #ffffff;
+}
+nav a:hover {
+    color:cyan
+}
+
+/* small screen format */ 
+@media only screen and (max-width: 768px){
+nav ul {
+    flex-direction: column;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0 2vw;
+}
+
+nav a {
+    text-decoration: none;
+    display: block; 
+    padding: .1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 1px solid #aaa;
+    color: cadetblue;
+}
+
+nav .active a {
+    background-color: cadetblue;
+    color: white;
+    
+}
+
+} /*end to media query. */
+
+/* large screen format */ 
+@media only screen and (min-width: 601px){
+    nav {
+        border-top: solid 1px #E0E6E6;
+        
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+        display:flex;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color:cadetblue;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
+    
+    nav .active a {
+        border-bottom: solid 2px cadetblue;
+    }
+    nav a:hover {
+        color: darkcyan;
+    }
+    
+} /*end to media query.*/
+
+
+
+
+/* Main section styling */
+main {
+    padding: 2rem 2vw;
+}
+
+main h1 {
+    color:cadetblue;
+}
+
+main h2 {
+    color:cadetblue;
+    margin-bottom: .2rem;
+}
+
+main h3 {
+    color:cadetblue;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color:rgb(7, 75, 75);
+    margin: 0;
+}
+
+main ol {
+    padding: 1rem 30px;
+    background-color:beige;
+}
+
+main dl dt {
+    color:darkcyan;
+    font-weight: 400;
+}
+
+main dl dd {
+    color:darkcyan;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: lower-greek;
+}
+
+main ul li {
+    line-height: 200%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address{
+    font-style: normal;
+    background-color:#8db0d9;
+    width: 12.5rem;
+    padding: .5rem;
+    border: 2px solid #024873;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color:floralwhite;
+}
+
+.wrapimage {
+    width: 50%;
+    margin: 0;
+    float: right;
+    margin-left: 2vw;
+}
+.wrapimage img {
+    width: 100%;
+    height: auto;
+}
+.wrapimage figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .banner {
+    background-image: url(images2/newbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  .bottombanner {
+    background-image: url(images2/bottombanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .aboutusbaner {
+    background-image: url(images2/aboutusbaner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .packagesbanner {
+    background-image: url(images2/packagesbanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .thankyou {
+    background-image: url(images2/thankyou.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+.travel-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #ea915a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.travel-btn:hover {
+    background-color: #d87e45;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/* Figure section styling */
+
+figure.home {
+    width:50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.home img {
+    width: 100%;
+    height: auto;
+    }
+
+    
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 0px black;
+    filter: grayscale(100%);
+}
+
+div.gallery figcaption {
+    font-size: .8rem;
+    color: darkcyan;
+    text-align: center;
+}
+
+.areamap {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;     
+    text-align: center; 
+    margin:20px;      
+}
+.areamap {
+    text-align: center;  
+    margin: 20px;          
+}
+.areamap {
+    margin: 0rem;
+}
+
+/* Form styling section */
+
+.myform fieldset{
+    border: 1px solid #43a0b6; 
+    border-radius: .8rem; 
+    margin-bottom: 1rem; 
+    color: #43a0b6;
+    background-color:aliceblue;
+}
+
+.myform legend {
+    color: #43a0b6;
+    font-size: .8rem; 
+}
+
+.myform label, select, [type=text], [type=tel], textarea {
+    display:flow-root; 
+}
+
+.myform label { 
+    margin: .5rem; 
+}
+
+.myform [type=text], [type=tel], textarea, select {
+    border: 2px #43a0b6;
+    padding: .3rem;
+    width: 250px; 
+    border-radius: .3rem;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 200;
+}
+
+.myform textarea {
+    height: 8rem; 
+}
+   
+.myform :required {
+    background-color:#faefb0;
+}
+
+.myform [type=submit]{
+    background-color: #43a0b6;
+    color: white; 
+    border: none;
+    padding: 1rem 2rem; 
+    border-radius: 10px; 
+    margin: 1rem 0 0 1vw; 
+}
+
+
+.outdoorlogo {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.outdoorlogo section {
+    flex-basis: 20%;
+    margin: 0.5rem 0; 
+    padding: 0rem;     
+}
+
+.outdoorlogo span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;
+}
+.outdoorlogo img {
+    width: 98%;
+    height: auto;
+}
+
+.favicon.ico {
+    height: 64px;
+    width: 64px;
+}
+
+
+
+.home img {
+    width: 100%;
+    max-width: 700px;
+    height: auto; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.home img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+}
+
+.home {
+    text-align: center; 
+    flex: 1; 
+}
+
+.home figcaption {
+    margin-top: 10px; 
+    font-size: 1rem; 
+    color: cadetblue; 
+}
+
+
+
+
+
+
+.hero {
+    width: 100%;
+    margin: 0;
+}
+
+.hero img{
+    width: 100%;
+    height: auto; 
+    margin: 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #ea915a;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table td {
+    color:cadetblue;
+    padding: .4rem 2vw;
+}
+
+table tr:nth-last-child(odd){
+    background-color:#f7f7f7;
+}
+
+table tr:hover {
+    background-color: #faefb0;
+}
+
+
+
+
+
+/* Footer section styling */
+footer {
+    background-color:#faefb0;
+    text-align:center; 
+    color: #faefb0;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
